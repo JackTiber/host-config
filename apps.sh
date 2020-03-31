@@ -3,7 +3,6 @@
 ## Ubuntu Version
 VERSION=$(lsb_release -rs)
 
-
 ## Cache Update
 sudo apt update
 
