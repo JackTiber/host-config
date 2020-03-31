@@ -17,3 +17,7 @@ sudo apt install -y code
 
 ## Install GoLand via Snap
 sudo snap install goland --classic
+
+## Rider
+sudo snap install rider --classic
+
