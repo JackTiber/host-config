@@ -1,11 +1,16 @@
 #!/bin/bash
 
+## Ubuntu Version
+VERSION=$(lsb_release -rs)
+
+
 ## Cache Update
 sudo apt update
 
 ## Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.0.2-amd64.deb
 sudo apt install -y ./slack-desktop-4.0.2-amd64.deb
+sudo rm ./slack-desktop-4.0.2-amd64.deb
 
 ## Docker Desktop
 sudo apt remove docker docker-engine docker.io containerd runc
@@ -16,21 +21,19 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
 
-## Rider
-sudo snap install rider --classic
-
 ## NodeJS
 sudo apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 
 ## .NET Core 3.1
-wget -q https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget -q https://packages.microsoft.com/config/ubuntu/$VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt -y install apt-transport-https
 sudo apt update
 sudo apt -y install dotnet-sdk-3.1
+sudo rm packages-microsoft-prod.deb
 
 ## GoLang
 sudo apt install -y golang
