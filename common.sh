@@ -11,3 +11,6 @@ sudo apt install -y curl wget jq tmux htop bash-completion
 
 ## L2TP over IPSEC VPN Support
 sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome libreswan
+
+## Add Gnome Tweaks
+sudo apt install -y gnome-tweaks
