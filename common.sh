@@ -20,4 +20,7 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/
 sudo apt update
 sudo apt install -y arc-theme
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key | sudo apt-key add -
-sudo apt install -y unity-tweak-tool
+
+## Moka Icons for GNOME
+sudo add-apt-repository -u ppa:snwh/ppa
+sudo apt install -y moka-icon-theme faba-icon-theme faba-mono-icons
