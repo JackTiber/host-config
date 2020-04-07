@@ -14,3 +14,10 @@ sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome libreswan
 
 ## Add Gnome Tweaks
 sudo apt install -y gnome-tweaks
+
+## Add Arc-theme
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+sudo apt update
+sudo apt install -y arc-theme
+wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key | sudo apt-key add -
+sudo apt install -y unity-tweak-tool
