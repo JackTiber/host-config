@@ -6,9 +6,6 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/
 sudo apt update
 sudo apt install -y kubectl
 
-## KubeCTL AutoCompletion
-kubectl completion bash >/etc/bash_completion.d/kubectl
-
 ## Helm
 wget https://get.helm.sh/helm-v3.1.2-linux-amd64.tar.gz
 tar -zxvf helm-v3.1.2-linux-amd64.tar.gz
@@ -20,3 +17,5 @@ sudo rm -r linux-amd64
 curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
 chmod +x skaffold
 sudo mv skaffold /usr/local/bin
+
+echo "Make sure to add auto-completion to Kubectl!"
