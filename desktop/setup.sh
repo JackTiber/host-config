@@ -11,6 +11,8 @@ sudo apt install -y gnome-tweaks gnome-disk-utility lm-sensors hddtemp
 sudo snap install gnome-logs
 sudo snap install bluez
 sudo snap install jq
+sudo snap install tela-icons
+sudo snap install adapta-theme-colorpack
 
 # Add Office Tools
 sudo snap install onlyoffice-desktopeditors
