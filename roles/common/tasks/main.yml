@@ -1,0 +1,14 @@
+---
+  - name: Install Common Packages
+    ansible.builtin.apt:
+      state: present
+      name: "{{ item }}"
+    loop: "{{ packages }}"
+    when: ansible_distribution in ["Ubuntu", "Debian"]
+
+  - name: Install Common Packages
+    ansible.builtin.dnf:
+      state: present
+      name: "{{ item }}"
+    loop: "{{ packages }}"
+    when: ansible_distribution == "Fedora"

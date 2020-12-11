@@ -1,0 +1,11 @@
+packages:
+  - awesome
+  - gimp
+  - gnome-disk-utility
+  - gnome-boxes
+  - gnome-tweaks
+  - gnome-shell-extensions
+  - python3-pip
+  - remmina
+  - stacer
+  - virt-manager
