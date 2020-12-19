@@ -15,9 +15,7 @@ do
         htop \
         bash-completion \
         nano \
-        git \
         ansible
 
     exit 0
-    
 done
