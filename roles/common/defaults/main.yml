@@ -4,8 +4,8 @@ packages:
   - gnome-disk-utility
   - gnome-boxes
   - gnome-tweaks
-  - gnome-shell-extensions
   - python3-pip
+  - openssl
   - remmina
   - stacer
   - virt-manager
