@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 code --install-extension 42Crunch.vscode-openapi
 code --install-extension auchenberg.vscode-browser-preview
