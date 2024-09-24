@@ -133,13 +133,6 @@ export PATH="/home/jackbarger/.local/share/JetBrains/Toolbox/scripts:$PATH"
 # pipenv
 export PATH="/home/jackbarger/.local/bin:$PATH"
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export TK_LIBRARY="/usr/lib64/libtk8.6.so"
-export TCL_LIBRARY="/usr/lib64/libtcl8.6.so"
-
 # aliases
 alias ls="eza -lah"
 alias kubectx="kubectl-ctx"
